@@ -1,1 +1,24 @@
-Placeholder diagram file
+flowchart LR
+    subgraph Region["Azure Region"]
+        LB["Public Load Balancer"]
+        LB --> VM1["VM1 (Web Server)"]
+        LB --> VM2["VM2 (Web Server)"]
+        LB --> VM3["VM3 (Web Server)"]
+
+        subgraph NSG["Network Security Group"]
+            Rule1["Allow HTTP (80)"]
+            Rule2["Allow SSH (22)"]
+        end
+
+        VM1 --> NSG
+        VM2 --> NSG
+        VM3 --> NSG
+
+        subgraph VNet["Virtual Network"]
+            Subnet["Web Subnet"]
+        end
+
+        Subnet --> VM1
+        Subnet --> VM2
+        Subnet --> VM3
+    end
