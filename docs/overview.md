@@ -55,12 +55,14 @@ SSH keys are used instead of passwords.
 Health probe ensures only healthy VMs receive traffic.
 
 5. Cost Estimation (Approx.)
-Component	Quantity	Estimated Monthly Cost
-Public IP (Standard)	1	~£2–£3
-Load Balancer (Standard)	1	~£15–£20
-VMs (B1s)	3	~£10–£12 each
-Disks	3	~£3–£4 each
-VNet + Subnet	1	Free
+
+| Component | Quantity | Estimated Monthly Cost |
+| --- | --- | --- |
+| Public IP (Standard) | 1 | ~£2–£3 |
+| Load Balancer (Standard) | 1 | ~£15–£20 |
+| VMs (B1s) | 3 | ~£10–£12 each |
+| Disks | 3 | ~£3–£4 each |
+| VNet + Subnet | 1 | Free |
 
 
 Estimated total: ~£55–£65 per month
